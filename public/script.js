@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:5000/api/items';
+const apiUrl = 'http://localhost:3000/api/items';
 const itemModal = new bootstrap.Modal(document.getElementById('itemModal'));
 const itemForm = document.getElementById('itemForm');
 const itemsTableBody = document.getElementById('itemsTableBody');

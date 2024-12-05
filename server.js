@@ -17,3 +17,9 @@ sequelize.sync({ force: false }).then(() => {
 app.listen(5000, () => {
   console.log('Server running on http://localhost:5000');
 });
+
+const cors = require('cors');
+app.use(cors());
+
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
